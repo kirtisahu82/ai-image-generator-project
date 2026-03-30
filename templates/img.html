@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgreen;
+            text-align: center;
+            margin: 0;
+        }
+        h1 {
+            color: rgb(47, 136, 47);
+            margin-top: 30px;
+        }
+        .home-btn {
+            background-color: rgb(222, 24, 27);
+            display: inline-block;
+            color: rgb(230, 216, 216);
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .download-btn {
+            background-color: rgb(222, 24, 27);
+            display: inline-block;
+            color: rgb(230, 216, 216);
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 style="color: green; text-align:center">Image Generated</h1>
+    
+    <a href="/" class="home-btn">Home</a>
+
+
+    {% if image_url  %}
+        <br><br>
+        <img src="{{ image_url }}" style="width: 450px; border-radius: 12px;">
+        <br><br>
+        <a href="{{ image_url }}" download class="download-btn" >Download Image</a>
+    {% endif %}
+</body>
+</html>

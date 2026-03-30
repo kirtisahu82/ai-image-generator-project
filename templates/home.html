@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            color: rgb(47, 136, 47);
+            text-align: center;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 2px solid rgb(123, 200, 123);
+            border-radius: 5px;
+        }
+        button {
+            background-color: rgb(222, 24, 27);
+            color: rgb(230, 216, 216);
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>AI IMAGE GENERATOR</h1>
+
+    <form method="POST" action="/image">
+        <input type="text" name="prompt" placeholder="Enter image prompt" required>
+        <button type="submit">Create Image</button>
+    </form>
+
+</div>
+</body>
+</html>
