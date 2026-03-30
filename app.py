@@ -20,7 +20,7 @@ headers = {
 
 @app.route("/image",methods=["POST","GET"])
 def image():
-    image = None
+    image_url = None
 
     if request.method == "POST":
         prompt = request.form.get("prompt")
