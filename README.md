@@ -23,6 +23,17 @@ Users can enter a text prompt and generate AI-based images instantly.
 
 ---
 
+## 📸 Screenshots
+
+### 🏠 Home Page
+![Home](screenshots/home.jpeg)
+
+### 🎨 Generated Image
+![Output](screenshots/image.jpeg)
+
+---
+
+
 📂 Project Structure
 
 ai-image-generator-project/
@@ -38,7 +49,7 @@ ai-image-generator-project/
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/ai-image-generator-project.git
+git clone https://github.com/kirtisahu82/ai-image-generator-project.git
 
 2. Go to project folder:
 
